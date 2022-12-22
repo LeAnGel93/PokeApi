@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <script src="./script.js" defer></script>
+    <title>Pokedex</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Pokedex</h1>
+        <div class="search"></div>
+        <div id="pokedex"></div>
+    </div>
+    <!--<script src="js/pokedex.js"></script> -->
+</body>
+</html>
+
+<!-- let pokemons = []
+//const listPokedex = document.querySelector('#pokedex');
+
+// fetch('https://pokeapi.co/api/v2/pokemon/ditto')
+//     .then((response) => response.json())
+//     .then((responseJson) => {
+//         pokemons = [...pokemons, responseJson]
+//         console.log(pokemons)
+//     })
+
+const getPokemons = async (name) => {
+    const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${name}`);
+    const responseJson = await response.json();
+    console.log(responseJson);
+    pokemons = [...pokemons, responseJson];
+ 
+  };
+  console.log (getPokemons)
+
+  const init = async () => {
+    for (let i = 1; i < 152; i++) {
+        await getPokemons([i]);
+    }
+    // await getPokemons(1);
+    // await getPokemons(151);
+    console.log(pokemons);
+    for (const pokemon of pokemons) { 
+      const myOl$$ = document.querySelector('#pokedex');
+      const newLi$$ = document.createElement("li");
+      newLi$$.innerHTML = `
+              <h4>${pokemon.name}</h4>
+              <img src="${pokemon.sprites.front_default}" />
+              `;
+      myOl$$.appendChild(newLi$$);
+    }
+  }
+      // console.log(pokemons);
+//     for (const pokemon of pokemons) { 
+//         let divCard$$ = document.createElement('div');
+//         divCard$$.setAttribute('class', 'pokemonCard');
+//         const myOl$$ = document.querySelector('#pokedex');
+//         const pokemonLi$$ = document.createElement("li");
+//         let i = 0;
+//         i++
+//         pokemonLi$$.innerHTML = `
+//               <h4>n${[i]}${pokemon.name}</h4>
+//               <img src="${pokemon.sprites.front_default}" />
+//               `;
+//         myOl$$.appendChild(pokemonLi$$);
+//         //divCard$$.appendChild(pokemonLi$$)
+//     }
+//   }
+  init();-->
